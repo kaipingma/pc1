@@ -1,4 +1,5 @@
 """
+This is the script for testing doctest with Jenkins' integration.
 >>> my_funcs.func1()
 'func1'
 >>> my_funcs.func2()
