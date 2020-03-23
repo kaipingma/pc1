@@ -1,4 +1,5 @@
 """
+This module provides a collection of echo functions.
 >>> func1()
 'func1'
 >>> func2()
