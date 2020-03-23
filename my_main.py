@@ -1,6 +1,8 @@
 """
 >>> my_funcs.func1()
 'func1'
+>>> my_funcs.func2()
+'func2'
 """
 import my_funcs
 
