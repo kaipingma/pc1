@@ -5,7 +5,7 @@ from selenium.webdriver.support import expected_conditions as EC
 import time
 
 
-chrome = '/Users/kaipingma/play/notebook/chromedriver'
+chrome = 'drivers/chromedriver'
 driver = webdriver.Chrome(chrome)
 driver.get('http://www.python.org')
 
