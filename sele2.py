@@ -8,13 +8,13 @@ driver = webdriver.Chrome(chrome)
 driver.get('http://www.seleniumhq.org/')
 print('driver started.')
 
-element1 = driver.find_element(By.ID, 'gsc-i-id1')
+element1 = driver.find_element(By.ID, 'main_navbar')
 print(element1)
 
-element2 = driver.find_element(By.NAME, 'search')
-print(element2)
+# element2 = driver.find_element(By.NAME, 'Search')
+# print(element2)
 
-element3 = driver.find_element(By.XPATH, '//*[@id="gsc-i-id1"]')
+element3 = driver.find_element(By.XPATH, '//*[@id="main_navbar"]')
 print(element3)
 
 print("driver to sleep 10s.")
