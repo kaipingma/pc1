@@ -1,15 +1,16 @@
 from selenium import webdriver
+from selenium.webdriver.common.by import By
 import time
 
 
-CHRM = '/Users/kaipingma/play/notebook/chromedriver'
-driver = webdriver.Chrome(CHRM)
+chrome = 'drivers/chromedriver'
+driver = webdriver.Chrome(chrome)
 driver.get('https://www.seleniumeasy.com/test/basic-first-form-demo.html')
 print('driver started.')
 
-messageField = driver.find_element_by_xpath('//*[@id="user-message"]')
+messageField = driver.find_element(By.XPATH, '//*[@id="user-message"]')
 messageField.send_keys('Hello World')
-showMessageButton = driver.find_element_by_xpath('//*[@id="get-input"]/button')
+showMessageButton = driver.find_element(By.XPATH, '//*[@id="get-input"]/button')
 showMessageButton.click()
 
 print("driver to sleep 10s.")

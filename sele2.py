@@ -1,19 +1,20 @@
 from selenium import webdriver
+from selenium.webdriver.common.by import By
 import time
 
 
-CHRM = '/Users/kaipingma/play/notebook/chromedriver'
-driver = webdriver.Chrome(CHRM)
+chrome = 'drivers/chromedriver'
+driver = webdriver.Chrome(chrome)
 driver.get('http://www.seleniumhq.org/')
 print('driver started.')
 
-element1 = driver.find_element_by_id('gsc-i-id1')
+element1 = driver.find_element(By.ID, 'gsc-i-id1')
 print(element1)
 
-element2 = driver.find_element_by_name('search')
+element2 = driver.find_element(By.NAME, 'search')
 print(element2)
 
-element3 = driver.find_element_by_xpath('//*[@id="gsc-i-id1"]')
+element3 = driver.find_element(By.XPATH, '//*[@id="gsc-i-id1"]')
 print(element3)
 
 print("driver to sleep 10s.")

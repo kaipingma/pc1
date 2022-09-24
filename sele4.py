@@ -3,9 +3,9 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import Select
 import time
 
-chrome = '/Users/kaipingma/play/notebook/chromedriver'
-page = 'https://wiki.python.org/moin/FrontPage'
 
+page = 'https://wiki.python.org/moin/FrontPage'
+chrome = 'drivers/chromedriver'
 driver = webdriver.Chrome(chrome)
 driver.get(page)
 time.sleep(2)

@@ -2,10 +2,10 @@ from selenium import webdriver
 import time
 from selenium.webdriver.support.ui import Select
 
-chrome = '/Users/kaipingma/play/notebook/chromedriver'
+
 page = 'file:///Users/kaipingma/play/Linkedin_Python_Automation_Testing/Exercise%20Files/CH03/03_02/html_code_03_02' \
        '.html'
-
+chrome = 'drivers/chromedriver'
 driver = webdriver.Chrome(chrome)
 driver.get(page)
 time.sleep(2)
