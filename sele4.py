@@ -4,6 +4,10 @@ from selenium.webdriver.support.ui import Select
 import time
 
 
+# TODO
+# 1. Use the latest webdriver syntax
+# 2. Use the latest find element function
+
 page = 'https://wiki.python.org/moin/FrontPage'
 chrome = 'drivers/chromedriver'
 driver = webdriver.Chrome(chrome)

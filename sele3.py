@@ -3,6 +3,10 @@ import time
 from selenium.webdriver.support.ui import Select
 
 
+# TODO
+# 1. Use the latest webdriver syntax
+# 2. Use the latest find element function
+
 page = 'file:///Users/kaipingma/play/Linkedin_Python_Automation_Testing/Exercise%20Files/CH03/03_02/html_code_03_02' \
        '.html'
 chrome = 'drivers/chromedriver'
