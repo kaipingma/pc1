@@ -1,10 +1,13 @@
 from selenium import webdriver
+from selenium.webdriver.chrome.service import Service
+from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.common.by import By
 import time
 
 
-chrome = 'drivers/chromedriver'
-driver = webdriver.Chrome(chrome)
+# chrome = 'drivers/chromedriver'
+# driver = webdriver.Chrome(chrome)
+driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
 driver.get('https://www.seleniumeasy.com/test/basic-first-form-demo.html')
 print('driver started.')
 
